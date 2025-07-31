@@ -1,0 +1,160 @@
+form.affiliate-application-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Make each label-input/textarea pair stack nicely */
+form.affiliate-application-form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #222;
+}
+
+form.affiliate-application-form input[type="text"],
+form.affiliate-application-form input[type="email"],
+form.affiliate-application-form textarea,
+form.affiliate-application-form input{
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+form.affiliate-application-form input[type="text"]:focus,
+form.affiliate-application-form input[type="email"]:focus,
+form.affiliate-application-form textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+}
+
+/* Styles for the fieldset container */
+.affiliate-application-form fieldset {
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    margin-bottom: 25px; 
+    border-radius: 6px; 
+    background-color: #f9f9f9; 
+}
+
+/* Styles for the legend (the title of the fieldset) */
+.affiliate-application-form legend {
+    font-size: 1.1em; 
+    font-weight: bold;
+    padding: 0 10px; 
+    color: #333; 
+    background-color: #f9f9f9; 
+    border-radius: 4px; 
+    margin-left: -10px; 
+    margin-bottom: 10px; 
+    display: table; 
+}
+
+/* Styles for individual checkbox labels */
+.affiliate-application-form fieldset label {
+    display: block; 
+    margin-bottom: 10px; 
+    cursor: pointer; 
+    font-size: 0.95em; 
+    color: #555; 
+}
+
+/* Align checkbox input with its text */
+.affiliate-application-form fieldset input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    display: inline;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+}
+
+/* Hover effect for labels */
+.affiliate-application-form fieldset label:hover {
+    color: #0073aa; /* WordPress blue on hover */
+}
+
+
+button[type="submit"] {
+  margin-top: 30px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #357ABD;
+}
+
+@media (max-width: 600px) {
+  form.affiliate-application-form {
+    margin: 20px 15px;
+    padding: 20px 15px;
+  }
+}
+
+/* Styling for all custom affiliate notices */
+.notice.wp-travel-affiliate {
+    margin: 15px 0; /* Add some vertical spacing */
+    padding: 15px 20px; /* Inner padding */
+    border: 1px solid transparent; /* Default border, specific color overridden by success/error */
+    border-left: 5px solid; /* Stronger left border for emphasis */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word; /* Ensure long words break */
+}
+
+/* Specific styling for SUCCESS notices */
+.notice.wp-travel-affiliate.notice-success {
+    background-color: #e6ffe6; /* Light green background */
+    border-color: #4CAF50; /* Green border color */
+    color: #388E3C; /* Darker green text color */
+}
+
+/* Styling for the paragraph inside the notice */
+.notice.wp-travel-affiliate p {
+    margin: 0; /* Remove default paragraph margin */
+    padding: 0; /* Remove default paragraph padding */
+    font-weight: 500; /* Slightly bolder text */
+}
+
+/* Improve dismiss button visibility (optional, usually handled by WordPress default styles) */
+.notice.wp-travel-affiliate .notice-dismiss:before {
+    color: inherit; /* Inherit color from the notice text */
+}
+
+.notice.wp-travel-affiliate.notice-error {
+    background-color: #ffe6e6; 
+    border-color: #F44336;     
+    color: #D32F2F;           
+}
+
+.notice.wp-travel-affiliate.notice-error {
+    background-color: #ffe6e6; /* Light red background */
+    border-color: #F44336;     /* Red border color */
+    color: #D32F2F;            /* Darker red text color */
+}
